@@ -1,7 +1,7 @@
 ---
 marp: true
-title: Marp CLI example
-description: Hosting Marp slide deck on the web
+title: Workshop Ichiba
+description: Markdown basic for developer
 theme: uncover
 paginate: true
 _paginate: false
