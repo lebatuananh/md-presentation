@@ -7,21 +7,21 @@ paginate: true
 _paginate: false
 ---
 
-![bg](./assets/gradient.jpg)
+![bg](https://raw.githubusercontent.com/mramra3004/md-presentation/master/assets/gradient.jpg)
 
-# <!--fit--> Marp CLI example
+# <!--fit--> Markdown
 
-Hosting Marp slide deck on the web
+Cách viết tài liệu dành cho lập trình viên
 
-https://github.com/yhatt/marp-cli-example
+https://github.com/mramra3004/md-presentation
 
-<style scoped>a { color: #eee; }</style>
+<style>a { color: black; }</style>
 
 <!-- This is presenter note. You can write down notes through HTML comment. -->
 
 ---
 
-![Marp bg 60%](https://raw.githubusercontent.com/marp-team/marp/master/marp.png)
+![Marp bg 60%](./assets/kisspng-markdown-computer-icons-text-editor-5b087c0f7dc464.0959796815272827035152.png)
 
 ---
 
