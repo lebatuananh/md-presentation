@@ -1,0 +1,62 @@
+@startuml
+'https://plantuml.com/state-diagram
+
+state EzMobileApi.WebApi {
+  [*] --> Controller
+  Controller: Viết API vận chuyển 
+  Controller: data cho client (Mobile) 
+  [*] --> Helpers
+  Helpers: Định nghĩa các hàm phụ 
+  Helpers: trợ cho tầng controller
+  [*] --> Logs
+  Logs: Thư mục in ra log
+  [*] --> Middlewares
+  Middlewares: Viết thêm middlewares 
+  Middlewares: cần thiết (Log, Tracing,...)
+  [*] --> Resources
+  Resources: Định nghĩa tài
+  Resources: nguyên đa ngôn ngữ
+  [*] --> Services
+  Services: Viết các logic để làm sạch dữ liệu
+  Controller --> Services : Làm sạch dữ liệu trả ra từ API nội bộ
+}
+
+state EzMobileApi.Models {
+  EzMobileApi.Models --> EzMobileApi.WebApi
+  [*] --> Examples
+  Examples: Định nghĩa một số dữ
+  Examples: liệu để kiểm tra API
+  [*] --> Mappers
+  Mappers: Những model có độ sâu thuộc tính từ 
+  Mappers: 2 trờ lên thì cấu hình Auto Mapper 
+  [*] --> Request
+  Request: Chứa Request cho API nội bộ
+  Request: và API mobile
+  [*] --> Response
+  Response: Chứa Response cho API nội bộ 
+  Response: và API mobile
+  [*] --> Validators
+  Validators: Custom một số quy tắc
+  Validators:  xác thực dữ liệu 
+}
+
+state EzMobileApi.Driver{
+EzMobileApi.Driver --> EzMobileApi.WebApi
+EzMobileApi.Driver: Xử lý việc lấy dữ liệu 
+EzMobileApi.Driver: từ các con api nội bộ 
+}
+
+state EzMobileApi.Common{
+EzMobileApi.Common --> EzMobileApi.WebApi
+EzMobileApi.Common: Định nghĩa enum, constant,
+EzMobileApi.Common: config, utils cho riêng mình
+EzMobileApi.Common: dự án hiện tại
+
+}
+
+state Shared{
+Shared --> EzMobileApi.WebApi
+Shared --> EzMobileApi.Driver
+Shared: Các hàm dùng chung cho nhiều dự án
+}
+@enduml

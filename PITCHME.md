@@ -7,7 +7,8 @@ paginate: true
 _paginate: false
 ---
 
-![bg](https://raw.githubusercontent.com/mramra3004/md-presentation/master/assets/gradient.jpg)
+<!-- backgroundImage: "linear-gradient(to bottom, #67b8e3, #0288d1)" -->
+
 
 # <!--fit--> Markdown
 
@@ -21,55 +22,46 @@ https://github.com/mramra3004/md-presentation
 
 ---
 
-![Marp bg 60%](./assets/kisspng-markdown-computer-icons-text-editor-5b087c0f7dc464.0959796815272827035152.png)
+![Marp bg 60%](https://raw.githubusercontent.com/mramra3004/md-presentation/master/assets/kisspng-markdown-computer-icons-text-editor-5b087c0f7dc464.0959796815272827035152.png)
 
 ---
-
-![bg](#123)
-![](#fff)
-
-##### <!--fit--> [Marp CLI](https://github.com/marp-team/marp-cli) + [GitHub Pages](https://github.com/pages) | [Netlify](https://www.netlify.com/) | [Vercel](https://vercel.com/)
-
-##### <!--fit--> 👉 The easiest way to host<br />your Marp deck on the web
+##### <!--fit--> Cách sử dụng Markdown cơ bản
+   ### 1. Trình soạn thảo
+   ### 2. Câu lệnh cơ bản
 
 ---
-
+##### <!--fit--> Trình soạn thảo markdown
+- Trên Visual studio code: [Markdown all in one](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one).
+- Trên visual studio: [Markdown editor](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.MarkdownEditor).
+- Trên các bộ công cụ Jetbrain đã tích hợp sẵn markdown.
+- Ngoài ra có các trang soạn thảo online như: [Stackedit.io](https://stackedit.io/), [Editor.md](https://pandao.github.io/editor.md/en.html)
+- Nên dùng các trình soạn thảo cùng với các công cụ code như trên: Visual Code và Visual studio code, Jetbrain.
+---
+![bg right 80%](https://media.cheatography.com/storage/thumb/cheatography_markdown.750.jpg?last=1463133059)
+##### <!--fit--> Lệnh hay dùng trên markdown
+- Heading
+- Text
+- Table
+- Code
+- Menu
+- Blockquote
+- Image
+- Expand
+- Emoji
+- [Link tham khảo](https://www.pdfprof.com/PDF_Image.php?idt=93664&t=39)
+---
+##### <!--fit--> Thành phần cơ bản của khi viết tài liệu
+- Tổng quan hệ thống (nên vẽ bằng plant uml)
+- Cấu trúc các thư mục code, solution code
+- Các thuật toán mà phải tuỳ biến theo nghiệp vụ
+- Các cấu hình cơ bản (appsettings.json,...)
+- Các API, View,... có tác động với nghiệp vụ như thế nào để mọi người dễ sửa chữa, tìm kiếm nhanh.
+---
 ![bg right 60%](https://icongr.am/octicons/mark-github.svg)
-
-## **[GitHub Pages](https://github.com/pages)**
-
-#### Ready to write & host your deck!
-
-[![Use this as template h:1.5em](https://img.shields.io/badge/-Use%20this%20as%20template-brightgreen?style=for-the-badge&logo=github)](https://github.com/yhatt/marp-cli-example/generate)
-
+##### <!--fit--> Thực hành
 ---
+![bg 40% opacity blur](https://avatars.githubusercontent.com/u/34239991?v=4)
 
-![bg right 60%](https://icongr.am/simple/netlify.svg?colored)
+### Created by MRAMRA ([@mramra3004](https://github.com/mramra3004))
 
-## **[Netlify](https://www.netlify.com/)**
-
-#### Ready to write & host your deck!
-
-[![Deploy to Netlify h:1.5em](./assets/netlify-deploy-button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/yhatt/marp-cli-example)
-
----
-
-![bg right 60%](https://icongr.am/simple/zeit.svg)
-
-## **[Vercel](https://vercel.com/)**
-
-#### Ready to write & host your deck!
-
-[![Deploy to Vercel h:1.5em](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/yhatt/marp-cli-example)
-
----
-
-### <!--fit--> :ok_hand:
-
----
-
-![bg 40% opacity blur](https://avatars1.githubusercontent.com/u/3993388?v=4)
-
-### Created by Yuki Hattori ([@yhatt](https://github.com/yhatt))
-
-https://github.com/yhatt/marp-cli-example
+https://github.com/mramra3004/md-presentation

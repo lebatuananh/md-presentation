@@ -1,0 +1,17 @@
+@startyaml
+Serilog: "Cấu hình log cho ứng dụng API"
+Authorize: "Cấu hình authentication"
+ClientApi: "Tên Api"
+BidApiUrl: "Uri của api đấu giá nội bộ"
+BidApi: "Cấu hình endpoint api đấu giá"
+DataCommonApiUrl: "Uri của api cấu hình chung"
+DataCommonApi: "Cấu hình endpoint api cấu hình chung"
+CustomerApiUrl: "Uri của api khách hàng"
+CustomerApi: "Cấu hình endpoint api khách hàng"
+ContentApiUrl: "Uri của api nội dung \n website(sản phẩm,...)"
+ContentApi: "Cấu hình endpoint api nội dung \n website"
+SearchRecommendApiUrl: "Uri của api gợi ý tìm kiếm"
+SearchRecommendApi: "Cấu hình endpoint api gợi ý tìm kiếm"
+OrderApiUrl: "Uri của api đơn hàng"
+OrderApi: "Cấu hình endpoint api đơn hàng"
+@endyaml

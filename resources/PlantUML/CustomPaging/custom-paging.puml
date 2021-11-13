@@ -1,0 +1,48 @@
+@startuml
+'https://plantuml.com/activity-diagram-beta
+start 
+:CustomPaging(pageIndexApi,
+pageIndexClient=0,
+pageSizeClient,extraSkip);
+note: Xử lý phân trang \n (extraSkip: số bản ghi lấy \n thêm khi chưa đủ số bản ghi \n ở client)
+:PagingApi(pageIndexApi);
+note: Gọi Api nội bộ
+:pageSizeApi=responseApi.PageSize
+ skip=(pageIndexClient-1)*pageSizeClient
+;
+if(extraSkip!=null) then (true)
+  :skip=skip+extraSkip;
+else (false)
+  :skip=skip;
+endif
+  :dataResult=dataResponse
+  .Skip(skip)
+  .Take(pageSizeClient);
+if(dataResult.Count<pageSizeClient) then (true)
+    note: Trường hợp chưa \n lấy đủ bản ghi \n trên 1 trang
+
+    :PagingApi(pageIndexApi+1)
+    
+     extraData=responseApiNextPage
+     .Skip(0)
+     .Take(pageSizeClient-dataResult.Count)
+     
+     extraSkip=pageSizeClient-dataResult.Count
+     isNextPage=true
+     
+     dataResult=dataResult
+     .AddRange(responseApiNextPage);
+else if(skip=pageSizeApi - pageSizeClient) then (true)
+    : dataClient=dataResult
+      extraSkip=0
+      isNextPage=true;
+    note: Trường hợp khi \n lấy đến bản ghi cuối \n cùng ở pageIndexApi \n hiện tại
+else (false)
+    : dataClient=dataResult
+      extraSkip=extraSkip
+      isNextPage=false;
+    stop
+endif
+stop
+
+@enduml
