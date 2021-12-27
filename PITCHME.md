@@ -20,7 +20,7 @@ Quy trình làm việc dự án phần mềm
 
 ---
 
-![Marp bg 60%](https://raw.githubusercontent.com/mramra3004/md-presentation/master/assets/kisspng-markdown-computer-icons-text-editor-5b087c0f7dc464.0959796815272827035152.png)
+![Marp bg 60%](https://raw.githubusercontent.com/mramra3004/md-presentation/master/assets/steps-in-the-software-development-process-of-a-Scrum-sprint.png)
 
 ---
 ##### <!--fit--> Cách sử dụng Markdown cơ bản
