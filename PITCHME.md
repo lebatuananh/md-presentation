@@ -1,7 +1,7 @@
 ---
 marp: true
 title: Workshop Ichiba
-description: Markdown basic for developer
+description: Software Development Process
 theme: uncover
 paginate: true
 _paginate: false
@@ -10,11 +10,9 @@ _paginate: false
 <!-- backgroundImage: "linear-gradient(to bottom, #67b8e3, #0288d1)" -->
 
 
-# <!--fit--> Markdown
+# <!--fit--> Software Development Process
 
-Cách viết tài liệu dành cho lập trình viên
-
-https://github.com/mramra3004/md-presentation
+Quy trình làm việc dự án phần mềm
 
 <style>a { color: black; }</style>
 
